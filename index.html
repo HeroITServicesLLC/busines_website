@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Freelance Services</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS for styling -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to IT Freelance Services</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Request Service</a></li>
+                <li><a href="helpful-info.html">Helpful Information</a></li>
+                <li><a href="#login">Protected Info</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We provide top-notch IT freelance services tailored to your needs. Our team of experts are here to help you with all your technology requirements.</p>
+            <img src="animate/helloWorld.gif" alt="Computers" class="responsive">
+        </section>
+
+        <section id="services">
+            <h2>Request a Service</h2>
+            <form action="submit_service_request.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="service">Service Needed:</label>
+                <textarea id="service" name="service" required></textarea>
+                
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+
+        <section id="info">
+            <h2>Information</h2>
+            <p>We offer a variety of IT services including software development, system administration, and tech support. Contact us for more details!</p>
+        </section>
+
+        <section id="login">
+            <h2>Protected Information</h2>
+            <form action="validate_login.php" method="POST">
+                <label for="password">Enter Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Access</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 IT Freelance Services. All rights reserved.</p>body
+    </footer>
+</html>
